@@ -507,7 +507,8 @@ print 'It took ' + i + ' iterations to sort the deck.';
         firebase.initializeApp(config);
         document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
                 document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
-                    let selectedFile; handleFileUploadChange(e) {
+                    let selectedFile;
+                    handleFileUploadChange(e) {
                         selectedFile = e.target.files[0];
                     }
                     handleFileUploadSubmit(e) {
